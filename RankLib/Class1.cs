@@ -29,14 +29,15 @@ namespace RankLib
             if (a > mtx.GetLength(dimToCheck) || b > mtx.GetLength(dimToCheck)) 
                 throw new IndexOutOfRangeException("One of the provided indices is larger than the dimension of the matrix!");
 
-            if(row)
+            if (row)
             {
-                for(int i = 0; i < mtx.GetLength(0); i++)
+                for (int i = 0; i < mtx.GetLength(0); i++)
                 {
-                    Tuple<int,int> c1 = new Tuple<int,int>(a, i),
-                        c2 = new Tuple<int,int>(b, i);
+                    Tuple<int, int> c1 = new Tuple<int, int>(a, i),
+                        c2 = new Tuple<int, int>(b, i);
 
                 }
+            }
             
         }
 
